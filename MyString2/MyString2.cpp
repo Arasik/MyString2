@@ -1,7 +1,9 @@
 #include <iostream>
 #include "String.h"
-
+#include "HashTable.hpp"
 int String::num_strings = 0;
+
+
 int main()
 {
 	const char * s = "str";
@@ -44,6 +46,15 @@ int main()
 
 	delete str2;
 	delete str3;
+
+	//hash
+	HashTable<int, int> h;
+
+	for (int i = 0; i < 10; i++)
+	{
+		h.insert(i, i + 1);
+	}
+	h.find(1);
 	return 0;
 }
 
