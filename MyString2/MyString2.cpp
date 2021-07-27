@@ -3,7 +3,7 @@
 #include "HashTable.hpp"
 int String::num_strings = 0;
 
-
+///hhh
 int main()
 {
 	const char * s = "str";
@@ -11,26 +11,26 @@ int main()
 	std::cout << str.GetStr()<<std::endl;
 
 
-	//Ê¹ÓÃÄ¬ÈÏµÄ¹¹Ôìº¯ÊýÊ±£¬Ê¹ÓÃset»áÔõÃ´Ñù
+	//Ê¹ï¿½ï¿½Ä¬ï¿½ÏµÄ¹ï¿½ï¿½ìº¯ï¿½ï¿½Ê±ï¿½ï¿½Ê¹ï¿½ï¿½setï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½
 	String *str2 = new String();
 	char tempStr[100];
 	std::cin >> tempStr;
 	str2->SetStr(tempStr);
 	std::cout << str2->GetStr()<<std::endl;
 
-	//¸´ÖÆ¹¹Ôìº¯Êý
+	//ï¿½ï¿½ï¿½Æ¹ï¿½ï¿½ìº¯ï¿½ï¿½
 	String strTest;
 	strTest = str;
 	std::cout << strTest.GetStr() << std::endl;
 	String *str3 = new String(strTest);
 
 	std::cout <<"main's"<<String::num_strings<<std::endl;
-	//²âÊÔÊä³öÖØÔØ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	std::cout << *str3 << "\n";
-	//²âÊÔÊäÈëÖØÔØ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	std::cin >> *str3;
 	std::cout << *str3 << "\n";
-	//²âÊÔ±È½ÏÔËËã·ûµÄÖØÔØ
+	//ï¿½ï¿½ï¿½Ô±È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	if (*str3 > str)
 	{
 		std::cout << "yes str3 > str \n";
